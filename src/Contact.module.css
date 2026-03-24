@@ -1,0 +1,30 @@
+.contact {
+  max-width: 560px;
+}
+
+.text {
+  line-height: 1.7;
+  margin-bottom: var(--space-xl);
+}
+
+.button {
+  display: inline-block;
+  padding: var(--space-md) var(--space-xl);
+  background: var(--accent);
+  color: var(--bg-deep);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.button:hover {
+  background: var(--text-h);
+  color: var(--bg-deep);
+  transform: translateY(-1px);
+}
+
+.placeholder {
+  color: var(--text-muted);
+  font-style: italic;
+}

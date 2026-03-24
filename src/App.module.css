@@ -1,0 +1,137 @@
+.bgImage {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url('/pfp.jpeg') center top / cover no-repeat;
+  opacity: 0.1;
+  filter: blur(10px) saturate(0.85);
+}
+
+.skipLink {
+  position: absolute;
+  left: -9999px;
+  top: var(--space-sm);
+  z-index: 100;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--accent);
+  color: var(--bg-deep);
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.skipLink:focus {
+  left: var(--space-lg);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+  padding: 0 var(--space-lg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+.brand {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-h);
+  letter-spacing: 0.02em;
+}
+
+.brandAccent {
+  color: var(--accent);
+}
+
+.brand:hover {
+  color: var(--accent);
+}
+
+/* Hamburger button — mobile only */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-sm);
+  z-index: 10;
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-h);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burgerOpen span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.burgerOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerOpen span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Nav links */
+.links {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.links a {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: var(--text-h);
+}
+
+.links a.active {
+  color: var(--accent);
+}
+
+.main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+  min-height: calc(100vh - var(--nav-height));
+}
+
+/* Mobile: < 640px */
+@media (max-width: 639px) {
+  .burger {
+    display: flex;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    padding: var(--space-lg);
+    gap: var(--space-lg);
+    border-bottom: 1px solid var(--border);
+    z-index: 9;
+  }
+
+  .linksOpen {
+    display: flex;
+  }
+}
