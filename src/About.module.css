@@ -1,0 +1,40 @@
+.about {
+  max-width: 640px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.bio {
+  background: rgba(10, 11, 15, 0.85);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: var(--space-lg);
+}
+
+.bio p {
+  line-height: 1.7;
+  margin: 0 0 var(--space-lg);
+}
+
+.bio p:last-child {
+  color: var(--accent);
+}
+
+.bio b {
+  color: var(--accent);
+  font-weight: 600;
+}

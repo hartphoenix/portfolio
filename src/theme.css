@@ -1,0 +1,72 @@
+:root {
+  --bg-deep: #0a0b0f;
+  --bg: #111218;
+  --bg-surface: #1a1b24;
+  --bg-hover: #22232f;
+
+  --text: #9ca3af;
+  --text-h: #e8e4ef;
+  --text-muted: #5a5e6b;
+
+  --accent: #c9a84c;
+  --accent-dim: rgba(201, 168, 76, 0.15);
+  --accent-glow: rgba(201, 168, 76, 0.3);
+  --accent-secondary: #7cb87a;
+
+  --border: #2a2b35;
+  --border-glow: rgba(201, 168, 76, 0.12);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Kanit', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+  --space-2xl: 96px;
+
+  --max-width: 860px;
+  --nav-height: 64px;
+
+  font: 18px/1.6 var(--sans);
+  color: var(--text);
+  background: var(--bg-deep);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--text-h);
+}
