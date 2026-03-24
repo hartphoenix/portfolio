@@ -58,7 +58,7 @@ export const projects: Project[] = [
     accentColor: '#c9a84c',
     bannerUrl: '/triple-tac-toe.png',
     liveUrl: 'https://tic-tac-toe-3d-p3ar.onrender.com/',
-    codeUrl: 'https://github.com/hartphoenix/tic-tac-toe-sp-2026',
+    codeUrl: 'https://github.com/hartphoenix/tic-tac-toe-sp-2026/tree/multigame',
   },
 ]
 
