@@ -31,7 +31,7 @@ export const projects: Project[] = [
     tagline: 'Developmentally-aware AI tutoring platform.',
     description:
       'A system that tracks how the learner develops, matches interventions to developmental needs, and compounds the value of human teachers rather than replacing them. Multi-agent orchestration, learner state tracking, 10+ skills encoding pedagogical logic.',
-    tags: ['TypeScript', 'Claude API', 'Systems Architecture'],
+    tags: ['TypeScript', 'Claude Skills', 'Multi-Agent Orchestration', 'Systems Architecture'],
     accentColor: '#6cb4ee',
     bannerUrl: '/harness-banner.png',
     codeUrl: 'https://github.com/hartphoenix/weft',
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     title: 'The Schelling Point',
     tagline: 'Real-time cooperative word game for 20 players.',
     description:
-      'A Jackbox-TV-style multiplayer game where players converge on the same word without discussion. WebSocket architecture, server-authoritative state, embedding-space scoring. Led 4-person team architecture, designed coordination workflows, and devised gameplay/scoring system.',
+      'A Jackbox-TV-style multiplayer game where players converge on the same word without discussion. WebSocket architecture, server-authoritative state, embedding-space scoring. Led 4-person team, designed coordination workflows, and devised gameplay/scoring system.',
     tags: ['React', 'Node.js', 'WebSockets', 'AI/Embeddings'],
     accentColor: '#7cb87a',
     bannerUrl: '/schelling-point.png',

@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: var(--space-xl) 0 var(--space-2xl);
   position: relative;
 }
 
@@ -21,8 +20,8 @@
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
+  width: clamp(120px, 28vw, 200px);
+  height: clamp(120px, 28vw, 200px);
   border-radius: 50%;
   border: 2px solid var(--accent);
   object-fit: cover;
@@ -44,12 +43,14 @@
   max-width: 600px;
   margin: 0 0 var(--space-lg);
   line-height: 1.5;
+  padding: 7px;
 }
 
 .expansion {
   max-width: 560px;
   margin: 0 0 var(--space-lg);
   line-height: 1.7;
+  padding: 7px;
 }
 
 .ctas {

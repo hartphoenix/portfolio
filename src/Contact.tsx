@@ -10,8 +10,9 @@ export default function Contact() {
     <section className={styles.contact}>
       <h1>get in touch</h1>
       <p className={styles.text}>
-        I'm looking for early-stage teams who need to solve hard integration
-        problems at the intersection of human development and technology. I
+        I'm looking for
+        early-stage teams at the intersection of human development and
+        technology — especially technology that learns. I
         thrive in fast-paced environments with high independence, honest
         feedback, and curious collaborators.
       </p>

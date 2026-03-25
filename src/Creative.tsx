@@ -10,9 +10,6 @@ export default function Creative() {
   return (
     <section>
       <h1>creative</h1>
-      <p className={styles.intro}>
-        Some of the domains where my integrative process has developed:
-      </p>
       <div className={styles.grid}>
         {creativeItems.map((item) => (
           <LinkCard

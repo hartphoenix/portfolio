@@ -1,22 +1,15 @@
 .about {
-  max-width: 640px;
-  margin: 0 auto;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  gap: var(--space-lg);
-  margin-bottom: var(--space-xl);
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
+  float: right;
+  width: clamp(100px, 28vw, 180px);
+  height: clamp(100px, 28vw, 180px);
   border-radius: 50%;
   border: 2px solid var(--accent);
   object-fit: cover;
-  flex-shrink: 0;
+  margin: 0 0 var(--space-md) var(--space-lg);
+  shape-outside: circle(50%);
 }
 
 .bio {
@@ -24,6 +17,7 @@
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: var(--space-lg);
+  overflow: hidden;
 }
 
 .bio p {
@@ -38,4 +32,51 @@
 .bio b {
   color: var(--accent);
   font-weight: 600;
+}
+
+.primary {
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--accent);
+  color: var(--bg-deep);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.primary:hover {
+  background: var(--text-h);
+  color: var(--bg-deep);
+  transform: translateY(-1px);
+}
+
+.secondary {
+  padding: var(--space-sm) var(--space-lg);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  color: var(--accent);
+  font-size: 0.9375rem;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.secondary:hover {
+  background: var(--accent-dim);
+  color: var(--text-h);
+  transform: translateY(-1px);
+}
+
+.ctas {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  clear: both;
+}
+
+@media (max-width: 450px) {
+  .primary,
+  .secondary {
+    font-size: clamp(0.7rem, 3.2vw, 0.9375rem);
+    padding: var(--space-sm) clamp(12px, 5vw, var(--space-lg));
+    white-space: nowrap;
+  }
 }
