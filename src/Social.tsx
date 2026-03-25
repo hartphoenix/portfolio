@@ -12,7 +12,6 @@ export default function Social() {
   return (
     <section>
       <h1>social</h1>
-      <p className={styles.intro}>Find me elsewhere on the web.</p>
       {activeLinks.length > 0 ? (
         <div className={styles.grid}>
           {activeLinks.map((link) => (

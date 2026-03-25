@@ -9,9 +9,6 @@ export default function Projects() {
   return (
     <section>
       <h1>projects</h1>
-      <p className={styles.intro}>
-        Some of my recent work:
-      </p>
       <div className={styles.grid}>
         {projects.map((project) => (
           <ProjectCard key={project.slug} {...project} />

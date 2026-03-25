@@ -11,13 +11,13 @@ export default function Home() {
       <img src="/pfp.jpeg" alt="Hart the Phoenix" className={styles.avatar} />
       <h1 className={styles.name}><span className={styles.accent}>hart</span> the phoenix</h1>
       <p className={styles.pitch}>
-        I build connective infrastructure that lets people and their tech do things
-        together that they couldn't do alone.
+        I just shipped a 20-player real-time
+        game, and now I'm building an AI platform that diagnoses how people learn.
       </p>
       <p className={styles.expansion}>
         I design bridges between people, technical systems,
         and disciplines that don't normally talk to each other. I've done this
-        with immersive theater, software teams, and AI, creating the conditions
+        with immersive theater, software teams, and AI systems, creating the conditions
         for emergence at every scale.
       </p>
       <div className={styles.ctas}>
