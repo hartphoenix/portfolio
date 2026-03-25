@@ -2,18 +2,34 @@ import type { Project } from './data'
 import styles from './ProjectCard.module.css'
 
 export default function ProjectCard({ title, tagline, description, tags, liveUrl, codeUrl, accentColor, bannerUrl, demoUrl }: Project) {
+  const headerLink = liveUrl || codeUrl
+
   return (
     <article
       className={styles.card}
       style={{ '--card-accent': accentColor } as React.CSSProperties}
     >
       {bannerUrl ? (
-        <img src={bannerUrl} alt="" className={styles.banner} />
+        headerLink ? (
+          <a href={headerLink} target="_blank" rel="noopener noreferrer">
+            <img src={bannerUrl} alt="" className={styles.banner} />
+          </a>
+        ) : (
+          <img src={bannerUrl} alt="" className={styles.banner} />
+        )
       ) : (
         <div className={styles.preview} />
       )}
       <div className={styles.body}>
-        <h3 className={styles.title}>{title}</h3>
+        <h3 className={styles.title}>
+          {headerLink ? (
+            <a href={headerLink} target="_blank" rel="noopener noreferrer" className={styles.titleLink}>
+              {title}
+            </a>
+          ) : (
+            title
+          )}
+        </h3>
         <p className={styles.tagline}>{tagline}</p>
         <p className={styles.description}>{description}</p>
         <div className={styles.tags}>

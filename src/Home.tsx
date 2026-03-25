@@ -17,7 +17,7 @@ export default function Home() {
       <p className={styles.expansion}>
         I design bridges between people, technical systems,
         and disciplines that don't normally talk to each other. I've done this
-        with immersive theater, software teams, and AI — creating conditions
+        with immersive theater, software teams, and AI, creating the conditions
         for emergence at every scale.
       </p>
       <div className={styles.ctas}>

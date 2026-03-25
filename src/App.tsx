@@ -12,6 +12,7 @@ const navItems = [
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const { pathname } = useLocation()
 
   const closeMenu = () => setMenuOpen(false)
@@ -20,6 +21,13 @@ export default function App() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [pathname])
+
+  // Track scroll for header backdrop
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   // Close menu on Escape
   useEffect(() => {
@@ -35,33 +43,35 @@ export default function App() {
     <>
       <div className={styles.bgImage} />
       <a href="#main-content" className={styles.skipLink}>Skip to content</a>
-      <nav className={styles.nav}>
-        <NavLink to="/" className={styles.brand} onClick={closeMenu}>
-          <span className={styles.brandAccent}>hart</span> the phoenix
-        </NavLink>
-        <button
-          className={`${styles.burger} ${menuOpen ? styles.burgerOpen : ''}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
-          aria-expanded={menuOpen}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
-        <div className={`${styles.links} ${menuOpen ? styles.linksOpen : ''}`}>
-          {navItems.map(({ to, label }) => (
-            <NavLink
-              key={to}
-              to={to}
-              className={({ isActive }) => isActive ? styles.active : ''}
-              onClick={closeMenu}
-            >
-              {label}
-            </NavLink>
-          ))}
-        </div>
-      </nav>
+      <header className={`${styles.header} ${scrolled ? styles.headerScrolled : ''}`}>
+        <nav className={styles.nav}>
+          <NavLink to="/" className={styles.brand} onClick={closeMenu}>
+            <span className={styles.brandAccent}>hart</span> the phoenix
+          </NavLink>
+          <button
+            className={`${styles.burger} ${menuOpen ? styles.burgerOpen : ''}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle navigation"
+            aria-expanded={menuOpen}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+          <div className={`${styles.links} ${menuOpen ? styles.linksOpen : ''}`}>
+            {navItems.map(({ to, label }) => (
+              <NavLink
+                key={to}
+                to={to}
+                className={({ isActive }) => isActive ? styles.active : ''}
+                onClick={closeMenu}
+              >
+                {label}
+              </NavLink>
+            ))}
+          </div>
+        </nav>
+      </header>
       <main id="main-content" className={styles.main}>
         <Outlet />
       </main>

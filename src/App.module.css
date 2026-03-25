@@ -24,6 +24,22 @@
   left: var(--space-lg);
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(10, 11, 15, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: background 0.4s ease, backdrop-filter 0.4s ease, -webkit-backdrop-filter 0.4s ease;
+}
+
+.headerScrolled {
+  background: rgba(10, 11, 15, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -36,10 +52,12 @@
 }
 
 .brand {
-  font-size: 1.125rem;
+  font-family: var(--heading);
+  font-size: 1.35rem;
   font-weight: 600;
   color: var(--text-h);
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .brandAccent {
@@ -90,9 +108,10 @@
 
 .links a {
   color: var(--text-muted);
-  font-size: 0.875rem;
+  font-size: 1.05rem;
+  font-weight: 700;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   transition: color 0.2s;
 }
 
@@ -108,30 +127,41 @@
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--space-xl) var(--space-lg);
-  min-height: calc(100vh - var(--nav-height));
 }
 
-/* Mobile: < 640px */
-@media (max-width: 639px) {
+/* Mobile: < 740px */
+@media (max-width: 739px) {
+  .main {
+    padding: var(--space-lg) var(--space-md);
+  }
   .burger {
     display: flex;
   }
 
   .links {
-    display: none;
+    display: flex;
     flex-direction: column;
+    align-items: flex-end;
     position: absolute;
     top: var(--nav-height);
     left: 0;
     right: 0;
-    background: var(--bg);
+    background: rgba(17, 18, 24, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     padding: var(--space-lg);
     gap: var(--space-lg);
     border-bottom: 1px solid var(--border);
     z-index: 9;
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
   }
 
   .linksOpen {
-    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 }
