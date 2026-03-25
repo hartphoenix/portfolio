@@ -87,3 +87,9 @@
   color: var(--text-h);
   transform: translateY(-1px);
 }
+
+@media (max-width: 739px) {
+  .hero {
+    padding: var(--space-lg) 0 var(--space-lg);
+  }
+}
