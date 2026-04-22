@@ -5,6 +5,8 @@ import App from './App'
 import Home from './Home'
 import About from './About'
 import Projects from './Projects'
+import Blog from './Blog'
+import BlogPost from './BlogPost'
 import Creative from './Creative'
 import Social from './Social'
 import Contact from './Contact'
@@ -19,6 +21,8 @@ createRoot(document.getElementById('root')!).render(
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<BlogPost />} />
           <Route path="creative" element={<Creative />} />
           <Route path="social" element={<Social />} />
           <Route path="contact" element={<Contact />} />

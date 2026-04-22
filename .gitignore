@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+## Blog template for markdown styles etc
+src/posts/hello-world.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
