@@ -116,7 +116,7 @@
 }
 
 .links a:hover {
-  color: var(--text-h);
+  color: #e8c070;
 }
 
 .links a.active {
@@ -126,7 +126,7 @@
 .main {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--space-xl) var(--space-lg);
+  padding: 80px 48px;
 }
 
 /* Mobile: < 740px */
