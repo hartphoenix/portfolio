@@ -8,7 +8,6 @@ import Projects from './Projects'
 import Blog from './Blog'
 import BlogPost from './BlogPost'
 import Creative from './Creative'
-import Social from './Social'
 import Contact from './Contact'
 import NotFound from './NotFound'
 import './theme.css'
@@ -24,7 +23,6 @@ createRoot(document.getElementById('root')!).render(
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:slug" element={<BlogPost />} />
           <Route path="creative" element={<Creative />} />
-          <Route path="social" element={<Social />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Route>

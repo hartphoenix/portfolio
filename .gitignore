@@ -26,3 +26,4 @@ src/posts/hello-world.md
 *.sln
 *.sw?
 .claude
+.theme-variants

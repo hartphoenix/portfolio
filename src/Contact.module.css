@@ -1,5 +1,5 @@
 .contact {
-  max-width: 560px;
+  max-width: var(--max-width);
 }
 
 .text {
@@ -7,24 +7,13 @@
   margin-bottom: var(--space-xl);
 }
 
-.button {
-  display: inline-block;
-  padding: var(--space-md) var(--space-xl);
-  background: var(--accent);
-  color: var(--bg-deep);
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: background 0.2s, transform 0.2s;
+.grid {
+  display: grid;
+  gap: var(--space-lg);
 }
 
-.button:hover {
-  background: var(--text-h);
-  color: var(--bg-deep);
-  transform: translateY(-1px);
-}
-
-.placeholder {
-  color: var(--text-muted);
-  font-style: italic;
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

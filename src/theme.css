@@ -1,20 +1,20 @@
 :root {
-  --bg-deep: #0a0b0f;
-  --bg: #111218;
-  --bg-surface: #1a1b24;
-  --bg-hover: #22232f;
+  --bg-deep: #0b0908;
+  --bg: #14100e;
+  --bg-surface: #1c1816;
+  --bg-hover: #262020;
 
-  --text: #9ca3af;
-  --text-h: #e8e4ef;
-  --text-muted: #5a5e6b;
+  --text: #b8a498;
+  --text-h: #f5ebe0;
+  --text-muted: #7a6a5e;
 
-  --accent: #c9a84c;
-  --accent-dim: rgba(201, 168, 76, 0.15);
-  --accent-glow: rgba(201, 168, 76, 0.3);
-  --accent-secondary: #7cb87a;
+  --accent: #d4a050;
+  --accent-dim: rgba(212, 160, 80, 0.12);
+  --accent-glow: rgba(212, 160, 80, 0.2);
+  --accent-secondary: #c48a40;
 
-  --border: #2a2b35;
-  --border-glow: rgba(201, 168, 76, 0.12);
+  --border: #2a2220;
+  --border-glow: rgba(212, 160, 80, 0.1);
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: 'Kanit', system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -27,7 +27,7 @@
   --space-xl: 64px;
   --space-2xl: 96px;
 
-  --max-width: 860px;
+  --max-width: 1120px;
   --nav-height: 64px;
 
   font: 18px/1.6 var(--sans);
@@ -46,17 +46,32 @@ body {
   margin: 0;
 }
 
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(ellipse 100% 40% at 50% 50%, rgba(212, 160, 80, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
 h1,
 h2,
 h3 {
   font-family: var(--heading);
   color: var(--text-h);
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.2;
 }
 
 h1 {
-  font-size: clamp(2.8rem, 8vw, 3.5rem);
+  font-size: clamp(3rem, 8vw, 5rem);
+  background: linear-gradient(135deg, #e8c070 0%, #d4a050 40%, #c48a40 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
   margin-top: 0px;
 }
 

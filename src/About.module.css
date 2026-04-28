@@ -3,15 +3,16 @@
   width: clamp(100px, 28vw, 180px);
   height: clamp(100px, 28vw, 180px);
   border-radius: 50%;
-  border: 2px solid var(--accent);
+  border: 2px solid rgba(212, 160, 80, 0.3);
   object-fit: cover;
   margin: 0 0 var(--space-md) var(--space-lg);
   shape-outside: circle(50%);
+  box-shadow: 0 0 40px rgba(212, 160, 80, 0.1);
 }
 
 .bio {
-  background: rgba(10, 11, 15, 0.85);
-  border: 1px solid var(--border);
+  background: rgba(11, 9, 8, 0.85);
+  border: 1px solid rgba(212, 160, 80, 0.06);
   border-radius: 12px;
   padding: var(--space-lg);
   overflow: hidden;
@@ -32,25 +33,26 @@
 }
 
 .primary {
-  padding: var(--space-sm) var(--space-lg);
-  background: var(--accent);
+  padding: 10px 36px;
+  background: linear-gradient(135deg, #d4a050 0%, #c48a40 100%);
   color: var(--bg-deep);
-  border-radius: 6px;
+  border-radius: 24px;
   font-weight: 600;
   font-size: 0.9375rem;
-  transition: background 0.2s, transform 0.2s;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .primary:hover {
-  background: var(--text-h);
+  background: linear-gradient(135deg, #e8c070 0%, #d4a050 100%);
   color: var(--bg-deep);
+  box-shadow: 0 4px 24px rgba(212, 160, 80, 0.25);
   transform: translateY(-1px);
 }
 
 .secondary {
-  padding: var(--space-sm) var(--space-lg);
-  border: 1px solid var(--accent);
-  border-radius: 6px;
+  padding: 10px 36px;
+  border: 1px solid rgba(212, 160, 80, 0.4);
+  border-radius: 24px;
   color: var(--accent);
   font-size: 0.9375rem;
   transition: background 0.2s, color 0.2s, transform 0.2s;
