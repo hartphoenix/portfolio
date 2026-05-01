@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Robert Hart — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: letter;
+    margin: 0.5in 0.55in;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #111;
+  }
+
+  body {
+    font-family: "Lora", Georgia, "Times New Roman", serif;
+    font-size: 8.75pt;
+    line-height: 1.3;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 5pt;
+  }
+
+  .name {
+    font-size: 22pt;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: -0.005em;
+    line-height: 1.1;
+  }
+
+  .contact {
+    margin: 3pt 0 5pt;
+    font-size: 8.75pt;
+  }
+  .contact a {
+    color: #1a4f87;
+    text-decoration: underline;
+  }
+  .contact-sep {
+    color: #444;
+    margin: 0 2pt;
+  }
+
+  .tagline {
+    margin: 0;
+    text-align: left;
+    font-size: 8.75pt;
+    text-indent: 0;
+  }
+  .tagline strong {
+    font-weight: 700;
+  }
+
+  .entry {
+    margin-top: 6pt;
+  }
+
+  .entry-title {
+    font-size: 10.5pt;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.25;
+  }
+  .entry-title .accent {
+    color: #555;
+    font-weight: 400;
+  }
+
+  .entry-meta {
+    font-style: italic;
+    color: #444;
+    font-size: 8.75pt;
+    margin: 0 0 1pt;
+  }
+
+  ul.bullets {
+    list-style: none;
+    margin: 1pt 0 0;
+    padding-left: 12pt;
+  }
+  ul.bullets li {
+    position: relative;
+    padding-left: 11pt;
+    margin-bottom: 0;
+  }
+  ul.bullets li::before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 6pt;
+    line-height: 1.9;
+    color: #1a1a1a;
+  }
+
+  .section-label {
+    font-size: 11pt;
+    font-weight: 600;
+    margin: 8pt 0 0;
+  }
+
+  .stack {
+    font-style: italic;
+    font-weight: 400;
+    color: #555;
+    font-size: 8.75pt;
+  }
+  .stack-sep { color: #777; }
+
+  .skills {
+    margin-top: 5pt;
+  }
+  .skills p {
+    margin: 0;
+  }
+  .skills strong { font-weight: 700; }
+
+  .education {
+    margin-top: 6pt;
+  }
+  .education strong { font-weight: 700; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1 class="name">Robert Hart</h1>
+    <p class="contact">
+      <a href="mailto:rhhart@gmail.com">rhhart@gmail.com</a><span class="contact-sep"> · </span><a href="https://hartphoenix.com">hartphoenix.com</a><span class="contact-sep"> · </span><a href="https://github.com/hartphoenix">github.com/hartphoenix</a><span class="contact-sep"> · </span><a href="https://linkedin.com/in/rhhart">linkedin.com/in/rhhart</a>
+    </p>
+    <p class="tagline">
+      <strong>AI-native full-stack engineer</strong> designing systems that connect people and technology. 15 years of integration work as educator, researcher, and live experience designer &mdash; now building software where these domains converge.
+    </p>
+  </div>
+
+  <div class="entry">
+    <p class="entry-title">Software Engineering Fellow <span class="accent">&mdash; Fractal Tech, NYC</span></p>
+    <p class="entry-meta">Feb 2026 &ndash; Present &middot; Full-time fellowship (700+ hours; six-day weeks)</p>
+    <ul class="bullets">
+      <li>Ship full-stack web applications (React, TypeScript, Express, MongoDB) in rapid sprint cycles</li>
+      <li>Lead systems integration on a 4-person team: designed coordination process (kanban automation, dependency filtering, priority sorting &amp; QA) that more than doubled team productivity on a week-long game build</li>
+      <li>Architect real-time multiplayer systems using WebSocket broadcast patterns and server-authoritative state</li>
+      <li>Build and operate multi-agent AI workflows: parallel dispatch, phase-sequenced builds, handoff protocols, memory management, and context engineering via custom agent skills</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <p class="entry-title">AI Engineering Intern <span class="accent">&mdash; Stage 11 Agentics, NYC</span></p>
+    <p class="entry-meta">Apr 2026 &middot; Two-week sprint via Fractal Tech fellowship</p>
+    <ul class="bullets">
+      <li>Contributed to an AI-related project at an early-stage startup; worked directly with the founder, shipping production code through daily-review, weekly-delivery cycles</li>
+      <li>Owned full delivery cycle on assigned features: implementation, code-review response, deployment to production, QA, and onboarding documentation enabling teammates to run the system from a clean install</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <p class="entry-title">Freelance Vocal Coach &amp; Creativity Coach <span class="accent">&middot; 2023 &ndash; 2026 &middot; NYC</span></p>
+    <ul class="bullets">
+      <li>Designed individualized developmental programs for 30+ clients, specializing in stage fright intervention and embodied self-awareness</li>
+      <li>Built pedagogical frameworks grounded in developmental psychology (Kegan, Piaget) that directly inform the scaffolding logic of Weft, a developmental AI tutoring platform</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <p class="entry-title">Lead Researcher <span class="accent">&mdash; DesignIntelligence &middot; 2020 &ndash; 2021 &middot; Atlanta/Remote</span></p>
+    <ul class="bullets">
+      <li>Led research teams producing long-form strategic reports for C-suite leaders in architecture, engineering, and construction</li>
+      <li>Synthesized complex systems-level analysis (healthcare demographics, pandemic economics, industry forecasting) for stakeholders operating at multiple levels of abstraction</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <p class="entry-title">Immersive Theater Designer &amp; Director <span class="accent">&middot; 2024 &ndash; 2025 &middot; NYC</span></p>
+    <ul class="bullets">
+      <li>Created and directed live branching-narrative experiences for up to 75 simultaneous participants across multiple venues, coordinating 26 characters with interlocking storylines, live improv, and audience-driven plot outcomes</li>
+      <li>Co-designed real-time state management systems tracking player and faction status throughout 5-hr productions</li>
+    </ul>
+  </div>
+
+  <p class="section-label">Projects</p>
+
+  <div class="entry">
+    <p class="entry-title">Weft <span class="accent">&mdash; Developmental AI Tutoring Platform</span> <span class="stack">| TypeScript &middot; Claude Code Skills &middot; Multi-agent orchestration</span></p>
+    <ul class="bullets">
+      <li>Designed and built a developmental AI tutoring system with 10+ agent skills encoding pedagogical logic: gap-type classification, learner state tracking, intervention matching, and spaced review</li>
+      <li>Architected multi-agent orchestration with parallel dispatch, phase sequencing, and handoff protocols; system routes around its own blind spots to preserve human teacher authority</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <p class="entry-title">The Schelling Point <span class="accent">&mdash; Real-Time Multiplayer Game</span> <span class="stack">| React &middot; TypeScript &middot; Express &middot; WebSocket &middot; Embedding</span></p>
+    <ul class="bullets">
+      <li>Built a cooperative multiplayer game where 20+ players converge on shared words using embedding-space centroids as the scoring engine</li>
+      <li>Redesigned game mechanics overnight (centroid-based convergence scoring) and shipped a working demo to 20 live players; first group won the game together</li>
+    </ul>
+  </div>
+
+  <div class="skills">
+    <p><strong>Languages &amp; Frontend:</strong> TypeScript, JavaScript, React, HTML, CSS</p>
+    <p><strong>Backend &amp; Data:</strong> Node.js, Express, WebSocket, MongoDB, PostgreSQL, SQLite, REST API design</p>
+    <p><strong>AI &amp; Tooling:</strong> Claude Code, multi-agent orchestration, context engineering, Git, Vite, Vitest</p>
+  </div>
+
+  <p class="education"><strong>Education: University of Georgia</strong> &mdash; BA, English Literature &amp; Music Business</p>
+
+</body>
+</html>
