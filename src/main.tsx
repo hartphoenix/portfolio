@@ -9,6 +9,7 @@ import Blog from './Blog'
 import BlogPost from './BlogPost'
 import Creative from './Creative'
 import Contact from './Contact'
+import Resume from './Resume'
 import NotFound from './NotFound'
 import './theme.css'
 
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="blog/:slug" element={<BlogPost />} />
           <Route path="creative" element={<Creative />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="resume" element={<Resume />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
