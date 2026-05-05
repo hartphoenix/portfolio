@@ -1,11 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
-import Markdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import rehypeHighlight from 'rehype-highlight'
 import { useTitle } from './useTitle'
 import { getPost } from './posts'
 import styles from './Blog.module.css'
-import 'highlight.js/styles/github-dark.css'
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>()
@@ -33,12 +29,19 @@ export default function BlogPost() {
         {post.meta.description && (
           <p className={styles.leadDescription}>{post.meta.description}</p>
         )}
+        <a
+          href={post.meta.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.substackLink}
+        >
+          View on Substack ↗
+        </a>
       </header>
-      <div className={styles.content}>
-        <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>
-          {post.content}
-        </Markdown>
-      </div>
+      <div
+        className={styles.content}
+        dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+      />
     </article>
   )
 }

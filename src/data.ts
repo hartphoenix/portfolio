@@ -85,13 +85,6 @@ export const creativeItems: CreativeItem[] = [
     url: 'https://power-point-d75.notion.site/Singing-from-Shy-to-Fly-Owning-Your-True-Voice-3cc49898e874461b87bf5172df9b7672',
   },
   {
-    title: 'Writing',
-    domain: 'writing',
-    description:
-      'Occasional essays on the joyous mess of building anything, from vocal technique to AI architecture.',
-    url: 'https://therestoftheowl.substack.com',
-  },
-  {
     title: 'Music Performance',
     domain: 'music',
     description:
