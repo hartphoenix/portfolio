@@ -12,8 +12,8 @@ dist
 dist-ssr
 *.local
 
-## Blog template for markdown styles etc
-src/posts/hello-world.md
+## Substack feed mirror (regenerated each build)
+src/posts.generated.json
 
 # Editor directories and files
 .vscode/*
