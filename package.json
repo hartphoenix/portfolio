@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "fetch-substack": "node --experimental-strip-types tools/fetch-substack.ts",
-    "predev": "npm run fetch-substack",
-    "prebuild": "npm run fetch-substack",
+    "sync-blog": "bash tools/sync-blog.sh",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

@@ -12,8 +12,6 @@ dist
 dist-ssr
 *.local
 
-## Substack feed mirror (regenerated each build)
-src/posts.generated.json
 
 # Editor directories and files
 .vscode/*
