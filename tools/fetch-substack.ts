@@ -61,8 +61,10 @@ async function fetchFeed(url: string): Promise<string> {
     const res = await fetch(url, {
       signal: controller.signal,
       headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; HartPortfolioRSS/1.0; +https://hartphoenix.com)',
-        'Accept': 'application/rss+xml, application/xml;q=0.9, */*;q=0.8',
+        'User-Agent':
+          'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        'Accept': 'application/rss+xml, application/xml;q=0.9, text/html;q=0.8, */*;q=0.5',
+        'Accept-Language': 'en-US,en;q=0.9',
       },
     })
     if (!res.ok) fail(`Feed fetch returned ${res.status} ${res.statusText}`)
