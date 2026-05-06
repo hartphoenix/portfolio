@@ -58,7 +58,13 @@ async function fetchFeed(url: string): Promise<string> {
   const controller = new AbortController()
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS)
   try {
-    const res = await fetch(url, { signal: controller.signal })
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; HartPortfolioRSS/1.0; +https://hartphoenix.com)',
+        'Accept': 'application/rss+xml, application/xml;q=0.9, */*;q=0.8',
+      },
+    })
     if (!res.ok) fail(`Feed fetch returned ${res.status} ${res.statusText}`)
     return await res.text()
   } catch (err) {
