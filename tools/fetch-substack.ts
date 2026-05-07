@@ -91,6 +91,9 @@ function cleanHtml(html: string): string {
   for (const sel of STRIP_SELECTORS) {
     for (const el of root.querySelectorAll(sel)) el.remove()
   }
+  for (const a of root.querySelectorAll('a.image-link')) {
+    a.replaceWith(a.innerHTML)
+  }
   for (const a of root.querySelectorAll('a')) {
     const href = a.getAttribute('href') ?? ''
     if (href.startsWith('#') || href === '') continue
