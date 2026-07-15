@@ -45,6 +45,7 @@ export const projects: Project[] = [
     tags: ['React', 'Node.js', 'WebSockets', 'AI/Embeddings'],
     accentColor: '#7cb87a',
     bannerUrl: '/schelling-point.png',
+    liveUrl: 'https://schellingpoints.ulyssepence.com/',
     codeUrl: 'https://github.com/ulyssepence/schellingpoints',
     demoUrl: '/schelling-point-movie.mp4',
   },

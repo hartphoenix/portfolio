@@ -30,37 +30,34 @@ export default function Resume() {
             <a href="https://linkedin.com/in/rhhart">linkedin.com/in/rhhart</a>
           </p>
           <p className={styles.tagline}>
-            <strong>AI-native full-stack engineer</strong> designing systems
-            that connect people and technology. 15 years of integration work
-            as educator, researcher, and live experience designer — now
-            building software where these domains converge.
+            <strong>AI-native full-stack engineer</strong> — shipped a
+            20-player real-time multiplayer game, an investor-facing AI
+            prototype for a startup client, and a multi-agent tutoring
+            platform, all in 2026. 15 years of client-facing work in
+            coaching, research, and creative direction.
           </p>
         </div>
 
         <section className={styles.entry}>
           <h3>Software Engineering Fellow — Fractal Tech, NYC</h3>
           <p className={styles.meta}>
-            Feb 2026 – Present · Full-time fellowship (700+ hours; six-day weeks)
+            Feb – May 2026 · Full-time fellowship (700+ hours; six-day weeks)
           </p>
           <ul>
             <li>
-              Ship full-stack web applications (React, TypeScript, Express,
-              MongoDB) in rapid sprint cycles
+              Shipped full-stack and real-time multiplayer web apps in rapid
+              sprint cycles (React, TypeScript, Express, MongoDB; WebSocket
+              broadcast patterns with server-authoritative state) — deployed
+              to Render, one containerized with Docker
             </li>
             <li>
-              Lead systems integration on a 4-person team: designed
-              coordination process (kanban automation, dependency filtering,
-              priority sorting & QA) that more than doubled team productivity
-              on a week-long game build
+              Led systems integration on a 4-person team: diagnosed central
+              coordination failure, then designed shared workflows that more
+              than doubled team output on a week-long game build
             </li>
             <li>
-              Architect real-time multiplayer systems using WebSocket
-              broadcast patterns and server-authoritative state
-            </li>
-            <li>
-              Build and operate multi-agent AI workflows: parallel dispatch,
-              phase-sequenced builds, handoff protocols, memory management,
-              and context engineering via custom agent skills
+              Built and tuned multi-agent AI workflows: parallel dispatch,
+              phase-sequenced builds, handoff protocols, context engineering
             </li>
           </ul>
         </section>
@@ -68,36 +65,63 @@ export default function Resume() {
         <section className={styles.entry}>
           <h3>AI Engineering Intern — Stage 11 Agentics, NYC</h3>
           <p className={styles.meta}>
-            Apr 2026 · Two-week sprint via Fractal Tech fellowship
+            Apr 2026 · Two-week engagement, working directly with the founder
           </p>
           <ul>
             <li>
-              Contributed to an AI-related project at an early-stage startup;
-              worked directly with the founder, shipping production code
-              through daily-review, weekly-delivery cycles
+              Took an open-ended brief and shaped it into a focused
+              deliverable; shipped an investor-facing prototype in two weeks,
+              under cost constraints, with team buy-in
             </li>
             <li>
-              Owned full delivery cycle on assigned features: implementation,
-              code-review response, deployment to production, QA, and
-              onboarding documentation enabling teammates to run the system
-              from a clean install
+              Owned the full delivery cycle: implementation, code-review
+              response, production deploys, QA, and onboarding docs
+            </li>
+          </ul>
+        </section>
+
+        <section className={styles.entry}>
+          <h3>Webmaster (retainer) — MacAvoy Foundation</h3>
+          <p className={styles.meta}>May 2026 – Present · Part-time</p>
+          <ul>
+            <li>
+              Sole technical steward for the nonprofit&apos;s web presence:
+              on call for issues and changes, advising non-technical
+              leadership
+            </li>
+          </ul>
+        </section>
+
+        <section className={styles.entry}>
+          <h3>Immersive Theater Designer &amp; Director</h3>
+          <p className={styles.meta}>2024 – Present · NYC</p>
+          <ul>
+            <li>
+              Directed teams of 4–26 performers in live branching-narrative
+              productions for up to 75 simultaneous participants —
+              interlocking storylines, live improv, audience-driven
+              outcomes; new productions in development
+            </li>
+            <li>
+              Co-designed the real-time state management systems tracking
+              player and faction status across 5-hour productions
             </li>
           </ul>
         </section>
 
         <section className={styles.entry}>
           <h3>Freelance Vocal Coach &amp; Creativity Coach</h3>
-          <p className={styles.meta}>2023 – 2026 · NYC</p>
+          <p className={styles.meta}>2023 – Present · NYC</p>
           <ul>
             <li>
-              Designed individualized developmental programs for 30+ clients,
-              specializing in stage fright intervention and embodied
-              self-awareness
+              Run own client practice (30+ clients): find real needs, then
+              design individualized developmental programs — specializing
+              in stage-fright intervention and embodied self-awareness
             </li>
             <li>
               Built pedagogical frameworks grounded in developmental
-              psychology (Kegan, Piaget) that directly inform the scaffolding
-              logic of Weft, a developmental AI tutoring platform
+              psychology (Kegan, Piaget) that now drive Weft&apos;s
+              scaffolding logic
             </li>
           </ul>
         </section>
@@ -107,30 +131,40 @@ export default function Resume() {
           <p className={styles.meta}>2020 – 2021 · Atlanta/Remote</p>
           <ul>
             <li>
-              Led research teams producing long-form strategic reports for
-              C-suite leaders in architecture, engineering, and construction
+              Owned the research-to-publication pipeline for strategic
+              reports advising C-suite leaders in architecture, engineering,
+              and construction: primary research (interviews and surveys
+              with dozens of industry professionals), quantitative analysis
+              (healthcare economics, demographics, market forecasting), and
+              all writing — delivered on fixed 60–90-day cycles
             </li>
             <li>
-              Synthesized complex systems-level analysis (healthcare
-              demographics, pandemic economics, industry forecasting) for
-              stakeholders operating at multiple levels of abstraction
+              Designed the firm&apos;s research methodology and each
+              report&apos;s evaluative frameworks, reconciling conflicting
+              sources into decision-grade guidance for non-technical
+              executives
+            </li>
+            <li>
+              Built out a nascent research department: recruited and vetted
+              researcher candidates, hired one, and trained and mentored
+              two — editing their reports and developing their projects from
+              initial question to published deliverable
             </li>
           </ul>
         </section>
 
         <section className={styles.entry}>
-          <h3>Immersive Theater Designer &amp; Director</h3>
-          <p className={styles.meta}>2024 – 2025 · NYC</p>
+          <h3>Earlier — rapid-study track record</h3>
+          <p className={styles.meta}>
+            Insurance agent, 2009 · Placement-exam tutor, 2017 – 2021
+          </p>
           <ul>
             <li>
-              Created and directed live branching-narrative experiences for
-              up to 75 simultaneous participants across multiple venues,
-              coordinating 26 characters with interlocking storylines, live
-              improv, and audience-driven plot outcomes
-            </li>
-            <li>
-              Co-designed real-time state management systems tracking player
-              and faction status throughout 5-hour productions
+              Self-studied 100 hours in 10 days to pass insurance licensing
+              exams, then translated legal-financial products into plain
+              language for customers daily; as a tutor, mastered multiple
+              subjects and taught across skill levels, often in one
+              classroom
             </li>
           </ul>
         </section>
@@ -142,7 +176,8 @@ export default function Resume() {
             Weft — Developmental AI Tutoring Platform
             <span className={styles.stack}>
               {' '}
-              | TypeScript · Claude Code Skills · Multi-agent orchestration
+              | 2026 – present · TypeScript · Claude Agent SDK ·{' '}
+              <a href="https://github.com/hartphoenix/weft">code</a>
             </span>
           </h3>
           <ul>
@@ -153,9 +188,8 @@ export default function Resume() {
               and spaced review
             </li>
             <li>
-              Architected multi-agent orchestration with parallel dispatch,
-              phase sequencing, and handoff protocols; system routes around
-              its own blind spots to preserve human teacher authority
+              Architected multi-agent orchestration — parallel dispatch,
+              phase sequencing, handoff protocols
             </li>
           </ul>
         </section>
@@ -165,19 +199,40 @@ export default function Resume() {
             The Schelling Point — Real-Time Multiplayer Game
             <span className={styles.stack}>
               {' '}
-              | React · TypeScript · Express · WebSocket · Embedding
+              | 2026 · React · TypeScript · Express · WebSocket ·{' '}
+              <a href="https://schellingpoints.ulyssepence.com/">play</a> ·{' '}
+              <a href="https://github.com/hartphoenix/schelling-points">
+                code
+              </a>
             </span>
           </h3>
           <ul>
             <li>
-              Built a cooperative multiplayer game where 20+ players converge
-              on shared words using embedding-space centroids as the scoring
-              engine
+              Led a 4-person team from an open brief (&ldquo;a party game of
+              some kind&rdquo;) to a scalable concept — 20+ players converge
+              on shared words via embedding-space centroids — shipped in a
+              5-day sprint with a solo overnight push to make demo day
             </li>
             <li>
-              Redesigned game mechanics overnight (centroid-based convergence
-              scoring) and shipped a working demo to 20 live players; first
-              group won the game together
+              Redesigned scoring overnight when players competed instead of
+              cooperating; 1st live group of 20 won together
+            </li>
+          </ul>
+        </section>
+
+        <section className={styles.entry}>
+          <h3>
+            PulseMap — Open Protocol for Synchronized Media Experiences
+            <span className={styles.stack}>
+              {' '}
+              | 2026 – present · TypeScript · SDK design ·{' '}
+              <a href="https://github.com/hartphoenix/pulsemap">code</a>
+            </span>
+          </h3>
+          <ul>
+            <li>
+              Designing an open-source protocol for layering synchronized
+              experiences onto time-based media
             </li>
           </ul>
         </section>
@@ -192,8 +247,12 @@ export default function Resume() {
             MongoDB, PostgreSQL, SQLite, REST API design
           </p>
           <p>
-            <strong>AI &amp; Tooling:</strong> Claude Code, multi-agent
-            orchestration, context engineering, Git, Vite, Vitest
+            <strong>AI &amp; Agents:</strong> Claude Code, Claude Agent SDK,
+            multi-agent orchestration, context engineering
+          </p>
+          <p>
+            <strong>Deployment &amp; Tooling:</strong> Docker, Render,
+            Railway, GitHub Actions (CI/CD), Git, Vite, Vitest
           </p>
         </section>
 
