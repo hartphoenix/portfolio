@@ -49,7 +49,7 @@ export const projects: Project[] = [
     accentColor: '#7cb87a',
     bannerUrl: '/schelling-point.png',
     liveUrl: 'https://schellingpoints.ulyssepence.com/',
-    codeUrl: 'https://github.com/ulyssepence/schellingpoints',
+    codeUrl: 'https://github.com/hartphoenix/schelling-points',
     demoUrl: '/schelling-point-movie.mp4',
   },
   {

@@ -15,7 +15,7 @@ export default function Home() {
         what they can create together.
       </p>
       <p className={styles.expansion}>
-        In 2026 I shipped a 20-player real-time game, an investor-facing AI prototype
+        In 2026 I shipped a 20-player real-time game, an AI prototype
         for a startup client, and a multi-agent tutoring platform. Now I'm looking for
         a role on a team whose mission matches my own: unleash human creativity.
       </p>

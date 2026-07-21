@@ -23,8 +23,8 @@ export default function About() {
           team</b>, it meant designing the workflows that synchronized our
           efforts, cut the thrashing, and doubled our output; we ended up shipping
           a 20-player real-time game in under a week. <b>Working directly with a
-          startup founder</b>, it meant turning an open-ended brief into a shipped,
-          investor-facing prototype in two weeks, under real cost constraints.
+          startup founder</b>, it meant turning an open-ended brief into a shipped
+          prototype in two weeks, under real cost constraints.
           <b>With AI</b>, it means building
           a developmental tutoring system that tracks how people learn, matches interventions
           to their actual needs, and compounds the value of human teachers rather than replacing them.

@@ -31,10 +31,10 @@ export default function Resume() {
           </p>
           <p className={styles.tagline}>
             <strong>AI-native full-stack engineer</strong> — shipped a
-            20-player real-time multiplayer game, an investor-facing AI
-            prototype for a startup client, and a multi-agent tutoring
-            platform, all in 2026. 15 years of client-facing work in
-            coaching, research, and creative direction.
+            20-player real-time multiplayer game, an AI prototype for a
+            startup client, and a multi-agent tutoring platform, all in
+            2026. 15 years of client-facing work in coaching, research,
+            and creative direction.
           </p>
         </div>
 
@@ -69,9 +69,9 @@ export default function Resume() {
           </p>
           <ul>
             <li>
-              Took an open-ended brief and shaped it into a focused
-              deliverable; shipped an investor-facing prototype in two weeks,
-              under cost constraints, with team buy-in
+              Shaped an open-ended brief into a focused deliverable;
+              shipped a working prototype in two weeks, under cost
+              constraints
             </li>
             <li>
               Owned the full delivery cycle: implementation, code-review
