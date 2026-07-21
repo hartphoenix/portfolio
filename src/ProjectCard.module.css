@@ -36,9 +36,21 @@
 }
 
 .title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-sm);
   font-size: 1.25rem;
   color: var(--text-h);
   margin: 0 0 var(--space-sm);
+}
+
+.year {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: #a08868;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
 }
 
 .titleLink {

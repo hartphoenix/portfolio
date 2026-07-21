@@ -4,6 +4,7 @@ export type Project = {
   tagline: string
   description: string
   tags: string[]
+  year?: string
   liveUrl?: string
   codeUrl?: string
   accentColor?: string
@@ -32,6 +33,7 @@ export const projects: Project[] = [
     description:
       'A system that tracks how the learner develops, matches interventions to developmental needs, and compounds the value of human teachers rather than replacing them. Multi-agent orchestration, learner state tracking, 10+ skills encoding pedagogical logic.',
     tags: ['TypeScript', 'Claude Skills', 'Multi-Agent Orchestration', 'Systems Architecture'],
+    year: '2026',
     accentColor: '#6cb4ee',
     bannerUrl: '/harness-banner.png',
     codeUrl: 'https://github.com/hartphoenix/weft',
@@ -41,13 +43,27 @@ export const projects: Project[] = [
     title: 'The Schelling Point',
     tagline: 'Real-time cooperative word game for 20 players.',
     description:
-      'A Jackbox-TV-style multiplayer game where players converge on the same word without discussion. WebSocket architecture, server-authoritative state, embedding-space scoring. Led 4-person team, designed coordination workflows, and devised gameplay/scoring system.',
+      "Led a four-person team from an open brief — 'a party game of some kind' — to a shipped 20-player product in a five-day sprint. When the first scoring design made players compete instead of cooperate, I rebuilt it overnight around embedding-space centroids so cooperation became the winning move; the first live group of 20 won together.",
     tags: ['React', 'Node.js', 'WebSockets', 'AI/Embeddings'],
+    year: '2026',
     accentColor: '#7cb87a',
     bannerUrl: '/schelling-point.png',
     liveUrl: 'https://schellingpoints.ulyssepence.com/',
     codeUrl: 'https://github.com/ulyssepence/schellingpoints',
     demoUrl: '/schelling-point-movie.mp4',
+  },
+  {
+    slug: 'pulsemap',
+    title: 'PulseMap',
+    tagline: 'Open protocol for synchronized media experiences.',
+    description:
+      'An open-source protocol and SDK for layering synchronized, interactive experiences onto any time-based media — turning passive playback into something audiences shape together. Designing the event schema, the sync model, and the developer-facing SDK.',
+    tags: ['TypeScript', 'Protocol Design', 'SDK', 'Open Source'],
+    year: '2026',
+    accentColor: '#d4a843',
+    bannerUrl: '/pulsemap-banner.png',
+    liveUrl: 'https://hartphoenix.github.io/pulseguide/',
+    codeUrl: 'https://github.com/hartphoenix/pulsemap',
   },
   {
     slug: 'triple-tac-toe',
@@ -56,6 +72,7 @@ export const projects: Project[] = [
     description:
       'A 3D tic-tac-toe game built with React Three Fiber. Multitouch controls for rotating and expanding the grid, multiplayer via shareable link.',
     tags: ['React', 'React Three Fiber', 'WebGL', 'Multiplayer'],
+    year: '2026',
     accentColor: '#c9a84c',
     bannerUrl: '/triple-tac-toe.png',
     liveUrl: 'https://tic-tac-toe-3d-p3ar.onrender.com/',

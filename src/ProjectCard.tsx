@@ -1,7 +1,7 @@
 import type { Project } from './data'
 import styles from './ProjectCard.module.css'
 
-export default function ProjectCard({ title, tagline, description, tags, liveUrl, codeUrl, accentColor, bannerUrl, demoUrl }: Project) {
+export default function ProjectCard({ title, tagline, description, tags, year, liveUrl, codeUrl, accentColor, bannerUrl, demoUrl }: Project) {
   const headerLink = liveUrl || codeUrl
 
   return (
@@ -29,6 +29,7 @@ export default function ProjectCard({ title, tagline, description, tags, liveUrl
           ) : (
             title
           )}
+          {year && <span className={styles.year}>{year}</span>}
         </h3>
         <p className={styles.tagline}>{tagline}</p>
         <p className={styles.description}>{description}</p>

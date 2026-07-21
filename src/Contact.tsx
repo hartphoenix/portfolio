@@ -13,11 +13,10 @@ export default function Contact() {
     <section className={styles.contact}>
       <h1>get in touch</h1>
       <p className={styles.text}>
-        I'm looking for
-        early-stage teams at the intersection of human development and
-        technology — especially technology that learns. I
-        thrive in fast-paced environments with high independence, honest
-        feedback, and curious collaborators.
+        I'm looking to join a team building technology that makes people more
+        creative and capable, in a role where I can work closely with those I'm
+        building for. I do my best work with full independence, high standards,
+        and direct feedback.
       </p>
       <div className={styles.grid}>
         <LinkCard
