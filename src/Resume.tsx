@@ -69,9 +69,9 @@ export default function Resume() {
           </p>
           <ul>
             <li>
-              Shaped an open-ended brief into a focused deliverable;
-              shipped a working prototype in two weeks, under cost
-              constraints
+              Shaped an open-ended brief into a focused deliverable;{' '}
+              <strong>shipped a working prototype in two weeks</strong>,
+              under cost constraints
             </li>
             <li>
               Owned the full delivery cycle: implementation, code-review
@@ -141,8 +141,8 @@ export default function Resume() {
             <li>
               Designed the firm&apos;s research methodology and each
               report&apos;s evaluative frameworks, reconciling conflicting
-              sources into decision-grade guidance for non-technical
-              executives
+              sources into{' '}
+              <strong>decision-grade guidance for non-technical executives</strong>
             </li>
             <li>
               Built out a nascent research department: recruited and vetted
@@ -222,17 +222,17 @@ export default function Resume() {
 
         <section className={styles.entry}>
           <h3>
-            PulseMap — Open Protocol for Synchronized Media Experiences
+            Open Source — Honcho (Plastic Labs)
             <span className={styles.stack}>
               {' '}
-              | 2026 – present · TypeScript · SDK design ·{' '}
-              <a href="https://github.com/hartphoenix/pulsemap">code</a>
+              | 2026 · TypeScript ·{' '}
+              <a href="https://github.com/plastic-labs/honcho/pull/456">PR #456</a>
             </span>
           </h3>
           <ul>
             <li>
-              Designing an open-source protocol for layering synchronized
-              experiences onto time-based media
+              Diagnosed and fixed a memory-layer bug in Honcho, an
+              unfamiliar production codebase; merged by Plastic Labs
             </li>
           </ul>
         </section>
