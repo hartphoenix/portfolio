@@ -13,9 +13,8 @@ export default function Contact() {
     <section className={styles.contact}>
       <h1>get in touch</h1>
       <p className={styles.text}>
-        I'm looking to join a team building technology that makes people more
-        creative and capable, in a role where I can work closely with those I'm
-        building for. I do my best work with full independence, high standards,
+        If your hardest problem is connecting systems, teams, and tools,
+        let's talk. I do my best work with full independence, high standards,
         and direct feedback.
       </p>
       <div className={styles.grid}>
