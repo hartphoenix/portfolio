@@ -16,8 +16,8 @@ export default function Home() {
       </p>
       <p className={styles.expansion}>
         In 2026 I shipped a 20-player real-time game, an AI prototype
-        for a startup client, and a multi-agent tutoring platform. Now I'm looking for
-        a role on a team whose mission matches my own: unleash human creativity.
+        for a startup client, and a multi-agent tutoring platform. If your
+        hardest problem is connecting systems, teams, and tools, let's talk.
       </p>
       <div className={styles.ctas}>
         <Link to="/projects" className={styles.primary}>See my work</Link>
