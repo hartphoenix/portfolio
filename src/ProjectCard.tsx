@@ -1,8 +1,9 @@
 import type { Project } from './data'
 import styles from './ProjectCard.module.css'
 
-export default function ProjectCard({ title, tagline, description, tags, year, liveUrl, codeUrl, accentColor, bannerUrl, demoUrl }: Project) {
+export default function ProjectCard({ title, tagline, description, tags, year, liveUrl, codeUrl, accentColor, bannerUrl, bannerBg, demoUrl, tweetUrl }: Project) {
   const headerLink = liveUrl || codeUrl
+  const bannerStyle = bannerBg ? { backgroundColor: bannerBg, objectFit: 'contain', padding: '20px 0' } as const : undefined
 
   return (
     <article
@@ -12,10 +13,10 @@ export default function ProjectCard({ title, tagline, description, tags, year, l
       {bannerUrl ? (
         headerLink ? (
           <a href={headerLink} target="_blank" rel="noopener noreferrer">
-            <img src={bannerUrl} alt="" className={styles.banner} />
+            <img src={bannerUrl} alt="" className={styles.banner} style={bannerStyle} />
           </a>
         ) : (
-          <img src={bannerUrl} alt="" className={styles.banner} />
+          <img src={bannerUrl} alt="" className={styles.banner} style={bannerStyle} />
         )
       ) : (
         <div className={styles.preview} />
@@ -38,7 +39,7 @@ export default function ProjectCard({ title, tagline, description, tags, year, l
             <span key={tag} className={styles.tag}>{tag}</span>
           ))}
         </div>
-        {(liveUrl || codeUrl || demoUrl) && (
+        {(liveUrl || codeUrl || demoUrl || tweetUrl) && (
           <div className={styles.links}>
             {liveUrl && (
               <a href={liveUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
@@ -53,6 +54,11 @@ export default function ProjectCard({ title, tagline, description, tags, year, l
             {codeUrl && (
               <a href={codeUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
                 Source Code
+              </a>
+            )}
+            {tweetUrl && (
+              <a href={tweetUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                Release Tweet
               </a>
             )}
           </div>
