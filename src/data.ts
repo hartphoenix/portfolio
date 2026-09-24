@@ -9,7 +9,9 @@ export type Project = {
   codeUrl?: string
   accentColor?: string
   bannerUrl?: string
+  bannerBg?: string
   demoUrl?: string
+  tweetUrl?: string
 }
 
 export type CreativeItem = {
@@ -26,6 +28,20 @@ export type SocialLink = {
 }
 
 export const projects: Project[] = [
+  {
+    slug: 'tether',
+    title: 'Tether',
+    tagline: 'Markdown review app for working with coding agents.',
+    description:
+      "Like Google Docs comments for your agent's markdown files. Highlight a passage, leave a comment, and your coding agent replies in the same thread. Comments persist across sessions and agents, and a CLI lets any agent read only the relevant threads, reply, and make safe edits. Shipped as a packaged macOS app with an installer and optional agent skill.",
+    tags: ['TypeScript', 'Bun', 'Milkdown', 'Agent CLI'],
+    year: '2026',
+    accentColor: '#8a96a3',
+    bannerUrl: '/tether-banner.png',
+    bannerBg: '#f5f3ee',
+    codeUrl: 'https://github.com/hartphoenix/tether',
+    tweetUrl: 'https://x.com/puheenix/status/2103262306310279508?s=20',
+  },
   {
     slug: 'weft',
     title: 'Weft',
