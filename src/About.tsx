@@ -22,23 +22,20 @@ export default function About() {
           coherence while allowing for improv. <b>Leading a four-person engineering
           team</b>, it meant designing the workflows that synchronized our
           efforts, cut the thrashing, and doubled our output; we ended up shipping
-          a 20-player real-time game in under a week. <b>Working directly with a
-          startup founder</b>, it meant turning an open-ended brief into a shipped
-          prototype in two weeks, under real cost constraints.
-          <b>With AI</b>, it means building
-          a developmental tutoring system that tracks how people learn, matches interventions
-          to their actual needs, and compounds the value of human teachers rather than replacing them.
+          a 20-player real-time game in under a week. <b>With AI</b>, it means building
+          Tether, a tool that helps people manage attention — their agents' and their
+          own — so they keep their judgment while agents do the work.
         </p>
         <p>
-          In every domain, it starts with observation: survey the full complexity of the situation,
-          the people, and technical constraints. Next, identify where integration
-          is failing or missing, and design a system that enables the parts to cohere.
+          In every domain, it starts with observation. The people doing the work
+          usually know where it's stuck; I start by asking them and listening. Then
+          I survey the technical constraints, identify where integration is failing
+          or missing, and design a system that enables the parts to cohere.
         </p>
         <p>
-          I'm looking to join a team building tech that makes people more creative
-          and capable. My lifelong mission is to amplify human development for
-          individuals and collectives. I diagnose what's blocking the system's
-          potential and build what unleashes it.
+          I teach people to teach themselves, and I build systems (human,
+          organizational, technical) that do the same. My measure of success is
+          what keeps growing after I leave.
         </p>
         <div className={styles.ctas}>
           <Link to="/projects" className={styles.primary}>See my work</Link>

@@ -13,9 +13,10 @@ export default function Contact() {
     <section className={styles.contact}>
       <h1>get in touch</h1>
       <p className={styles.text}>
-        If your hardest problem is connecting systems, teams, and tools,
-        let's talk. I do my best work with full independence, high standards,
-        and direct feedback.
+        I equip your team to keep getting better: better informed, better
+        prepared, and better connected to each other. I work in bounded
+        engagements: a short diagnostic, one intervention with a result you can
+        observe, and a handoff your team can run.
       </p>
       <div className={styles.grid}>
         <LinkCard
