@@ -73,7 +73,7 @@ export const projects: Project[] = [
     title: 'PulseMap',
     tagline: 'Open protocol for synchronized media experiences.',
     description:
-      'An open-source protocol and SDK for layering synchronized, interactive experiences onto any time-based media — turning passive playback into something audiences shape together. Designing the event schema, the sync model, and the developer-facing SDK.',
+      'An open-source protocol and SDK for layering synchronized, interactive experiences onto any time-based media — turning passive playback into something audiences shape together. I designed the event schema, the sync model, and the developer-facing SDK.',
     tags: ['TypeScript', 'Protocol Design', 'SDK', 'Open Source'],
     year: '2026',
     accentColor: '#d4a843',

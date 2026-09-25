@@ -4,10 +4,10 @@ Hart's professional portfolio site. Vite + React + TypeScript.
 
 ### Purpose
 
-One surface in a broader career search. The site should tell a
-coherent story that matches the elevator pitches, LinkedIn, GitHub
-profile, and resume — all telling the same narrative in different
-formats.
+Sells Hart's consulting practice (consulting-first as of 2026-09-24;
+employer-facing copy is out). The site should tell a coherent story that
+matches LinkedIn, the GitHub profile, and the resume — the same narrative
+in different formats.
 
 ### Thread & resources
 
@@ -38,16 +38,30 @@ live in the roger repo's portfolio thread:
 
 ### Key narrative decisions
 
-- **Core metaphor:** Mycorrhizal network — "I build the connective
-  systems that let people and technology do things together that
-  neither could do alone."
-- **Throughline:** The same integration operation across all domains
-  (theater → software teams → AI systems). Domains change; the
-  operation doesn't.
-- **Execution and vision bridge simultaneously** — the pitch (and
-  site) should demonstrate integration, not just describe it.
-- **Three portfolio projects:** Triple-Tac-Toe, Schelling Points,
-  Weft. Each shows a different facet of the integration capacity.
+Decided 2026-09-24 in
+`/Users/rhhart/Documents/GitHub/roger/threads/portfolio/2026-09-24-site-copy-proposals.md`
+(the Tether comment threads hold Hart's reasoning).
+
+- **Lead line:** "I teach teams to teach themselves — starting with AI."
+  The career thesis is teaching people to teach themselves; integration
+  is the method, not the headline.
+- **Audience:** businesses that aren't already strong on tech. What Hart
+  teaches includes how to teach yourself AI skills. Tether is the natural
+  conversation starter.
+- **Emphasize training, not building:** the focus is on who gets built.
+- **Voice:** human-to-human. Avoid consulting and industry jargon
+  ("stopped compounding," "restore the loop").
+- **Evidence:** Tether, Weft, and the merged Honcho contribution. Leave
+  Homing off. Don't cite the Stage11 client work (ended badly, under NDA).
+- **Superseded:** the mycorrhizal metaphor and the original three-project
+  set (Triple-Tac-Toe, Schelling Points, Weft).
+
+### Keep surfaces in sync
+
+Any change to positioning copy on the site (Home, About, Contact, project
+framing) also needs a matching revision of the GitHub profile bio/README
+and the LinkedIn headline and About section. Remind Hart and draft the
+revised copy in the same session.
 
 ### Open design questions
 
@@ -56,12 +70,11 @@ live in the roger repo's portfolio thread:
 - Weft publicity: how much of the system to show publicly.
 - Aesthetic direction: warm but not soft, crafted but not slick, alive
   and connected. See brainstorm §10.
-- The site itself is a portfolio piece — it demonstrates React/TS
-  proficiency to target companies.
+- The site itself is a portfolio piece — it demonstrates product and
+  React/TS craft to prospective clients.
 
 ### Conventions
 
 - React + TypeScript (Vite scaffold)
-- Prefer working software over perfect plans — iterate to polish
-- Keep dependencies minimal until there's a real reason to add them
-- Clear and readable code over clever code
+- Agents: run the site with `npm run dev:agent` (port 5188; stop with
+  `curl localhost:5188/__agent_stop`).

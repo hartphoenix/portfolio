@@ -11,13 +11,18 @@ export default function Home() {
       <img src="/pfp.jpeg" alt="Hart the Phoenix" className={styles.avatar} />
       <h1 className={styles.name}><span className={styles.accent}>hart</span> the phoenix</h1>
       <p className={styles.pitch}>
-        I embed with teams to build, deploy, and teach the technology that unlocks
-        what they can create together.
+        I teach teams to teach themselves — starting with AI.
       </p>
       <p className={styles.expansion}>
-        In 2026 I shipped a 20-player real-time game, an AI prototype
-        for a startup client, and a multi-agent tutoring platform. If your
-        hardest problem is connecting systems, teams, and tools, let's talk.
+        AI will keep accelerating like a rocket, so I teach people to harness
+        and ride it. I work alongside your people until they can do what I do:
+        pick up new tools, figure out what they're good for, and teach each other.
+      </p>
+      <p className={styles.expansion}>
+        Recently: Tether, a tool that helps you manage attention — your agents'
+        and your own; Weft, a tutoring system that tracks how each learner
+        develops and adapts to them; and a merged contribution to Plastic Labs'
+        agent memory system, Honcho.
       </p>
       <div className={styles.ctas}>
         <Link to="/projects" className={styles.primary}>See my work</Link>

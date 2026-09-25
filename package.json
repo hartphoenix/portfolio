@@ -7,6 +7,7 @@
     "fetch-substack": "node --experimental-strip-types tools/fetch-substack.ts",
     "sync-blog": "bash tools/sync-blog.sh",
     "dev": "vite",
+    "dev:agent": "vite --config vite.agent.config.ts --port 5188 --strictPort",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
